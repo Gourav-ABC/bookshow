@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}

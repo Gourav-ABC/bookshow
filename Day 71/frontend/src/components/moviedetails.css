@@ -1,0 +1,162 @@
+/* MovieDetails.css */
+
+moviedetails.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-details {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.movie-poster {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+.movie-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.star {
+  margin-right: 2px;
+  color: #ccc;
+}
+
+.star.full {
+  color: #f5b50a; /* gold */
+}
+
+.star.half {
+  color: #f5b50a;
+  position: relative;
+}
+
+/* For half star, we'll clip half by overlay */
+.star.half::after {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #ccc;
+}
+
+.rating-number {
+  font-size: 1rem;
+  color: #555;
+}
+
+.movie-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.movie-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.shows-section {
+  margin-top: 40px;
+}
+
+.shows-section h3 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.no-shows {
+  color: #777;
+  font-style: italic;
+}
+
+.shows-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.show-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.screen {
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.start-time {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.book-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease; 
+}
+
+.book-btn:disabled {
+  background-color: #3f3f3f;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #555;
+}

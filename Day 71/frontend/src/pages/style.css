@@ -1,0 +1,331 @@
+.login-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.register-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.register-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.register-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #218838;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.profile-container button {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #005fd1;
+}
+
+.profile-container p {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.profile-container strong {
+  color: #111;
+}
+
+.profile-container .error {
+  color: red;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .profile-container {
+    padding: 1.25rem;
+  }
+
+  .profile-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .profile-container button {
+    font-size: 0.95rem;
+  }
+}
+/* AdminAddShow.css */
+
+.admin-add-show-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-add-show-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.admin-add-show-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-add-show-container label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.admin-add-show-container select,
+.admin-add-show-container input[type="text"],
+.admin-add-show-container input[type="datetime-local"],
+.admin-add-show-container input[type="number"] {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.admin-add-show-container select:focus,
+.admin-add-show-container input[type="text"]:focus,
+.admin-add-show-container input[type="datetime-local"]:focus,
+.admin-add-show-container input[type="number"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.admin-add-show-container button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.admin-add-show-container button:hover {
+  background-color: #0056b3;
+}
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logout-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+.edit-show-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edit-show-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-show-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-show-container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: 600;
+  gap: 15px;  /* adds spacing between label text and input */
+}
+
+.edit-show-container input[type="text"],
+.edit-show-container input[type="datetime-local"],
+.edit-show-container input[type="number"] {
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.edit-show-container input[type="text"]:focus,
+.edit-show-container input[type="datetime-local"]:focus,
+.edit-show-container input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.edit-show-container button {
+  margin-top: 20px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-show-container button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-show-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.edit-show-container button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 10px;
+}
+
+.edit-show-container button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.edit-show-container .button-group {
+  display: flex;
+  justify-content: center;
+}
