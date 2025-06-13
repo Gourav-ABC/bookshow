@@ -8,6 +8,7 @@ import {
   unblockSeat,
   clearSelectedSeats
 } from '../Slices/seatBookingSlice';
+import './SeatBooking.css';
 
 const SeatBooking = () => {
   const { showId } = useParams();
